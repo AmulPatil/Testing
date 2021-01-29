@@ -10,10 +10,11 @@ from PIL import Image
 path = Path()
 path.ls(file_exts='.pkl')
 
+global learn
+
 # load the learner which we got from github
 learn = load_learner(path/'trained_model.pkl')
 
-global learn
 
 def stain_recognition():
   folders_1 = glob.glob('*.jpg')
