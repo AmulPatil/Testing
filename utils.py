@@ -1,3 +1,13 @@
+import numpy as np
+from PIL import Image, ImageOps
+from fastbook import *
+from google.colab import files
+import glob, os
+import cv2
+from google.colab.patches import cv2_imshow
+from PIL import Image
+
+
 def stain_recognition():
   folders_1 = glob.glob('*.jpg')
   folders_2 = glob.glob('*.jpeg')
